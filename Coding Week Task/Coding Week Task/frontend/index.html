@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gmail Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="menu" src="icons/menu.png" />
+        <img class="gmail-icon" src="icons/image 16.png" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="email" placeholder="Search mail" />
+        <img class="search-icon" src="icons/search-icon.png" />
+        <img class="search-arrow" src="icons/Arrow.png" />
+      </div>
+      <div class="right-section">
+        <img class="header-side" src="icons/help_outline.jpg" />
+        <img class="header-side" src="icons/settings.png" />
+        <img class="header-side" src="icons/Apps.png" />
+        <img class="avatar" src="icons/Avatar.png" />
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="compose-button">
+        <button class="compose">
+          <img class="compose-icon" src="icons/compose.png" />Compose
+        </button>
+      </div>
+      <div class="navigation-box">
+        <div
+          style="
+            color: rgb(200, 64, 49);
+            font-weight: 700;
+            background-color: rgb(249, 233, 231);
+          "
+          class="sidebar-link"
+        >
+          <img class="icon" src="icons/inbox.png" />Inbox<span
+            id="unread-count"
+            class="count-notify"
+          ></span>
+        </div>
+        <div class="sidebar-link">
+          <img class="icon" src="icons/starred.png" />Starred
+        </div>
+        <div class="sidebar-link">
+          <img class="icon" src="icons/snoozed.png" />Snozzed
+        </div>
+        <div class="sidebar-link">
+          <img class="icon" src="icons/sent.png" />Sent
+        </div>
+        <div class="sidebar-link">
+          <img class="icon" src="icons/drafts.png" />Drafts
+        </div>
+        <div class="sidebar-link">
+          <img class="icon" src="icons/spam.png" />Spam
+        </div>
+        <div class="sidebar-link">
+          <img class="icon" src="icons/trash.png" />Trash
+        </div>
+        <div class="sidebar-link">
+          <img class="arrow" src="icons/Arrow.png" /><img
+            class="icon"
+            src="icons/categories.png"
+          />Categories
+        </div>
+        <div class="sidebar-link">
+          <img class="icon" src="icons/more.png" />More
+        </div>
+      </div>
+    </nav>
+
+    <main class="body-element">
+      <div class="main-element">
+        <div class="pagenum">
+          <div class="text">1-50 of 2,619</div>
+          <span class="arr">&#8249;</span>
+          <span class="arr"> &#8250;</span>
+        </div>
+        <div class="section">
+          <div class="section-box" id="primary-tab">
+            <img class="tab-icon" src="icons/social.png" /> Primary
+          </div>
+          <div class="section-box" id="social-tab">
+            <img class="tab-icon" src="icons/social.png" /> Social
+          </div>
+          <div class="section-box" id="promotions-tab">
+            <img class="tab-icon" src="icons/promotions.png" /> Promotions
+          </div>
+          <div class="section-box" id="updates-tab">
+            <img class="tab-icon" src="icons/updates.png" /> Updates
+          </div>
+        </div>
+        <div id="mail-container"></div>
+      </div>
+    </main>
+  </body>
+</html>
